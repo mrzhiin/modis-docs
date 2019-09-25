@@ -1,6 +1,6 @@
 .DS_Store
 node_modules
-/.vuepress/dist
+public
 
 # Log files
 npm-debug.log*

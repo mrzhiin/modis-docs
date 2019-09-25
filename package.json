@@ -1,0 +1,12 @@
+{
+  "name": "modis-docs",
+  "repository": "https://github.com/mrzhiin/modis-docs.git",
+  "author": "mrzhiin <mrzhiin@gmail.com>",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
+  },
+  "devDependencies": {
+    "vuepress": "^1.1.0"
+  }
+}
