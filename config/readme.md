@@ -1,53 +1,44 @@
-# 选项
+# 通用选项
 
-## 基本选项
-
-### el
+## el
 
 - 类型：`string/Element`
 - 默认值：`""`
 
-CSS 选择器或 DOM 元素，用来显示评论区域
+CSS 选择器或 DOM 元素
 
-### backend
-
-- 类型：`string`
-- 默认值：`"valine"`
-
-选择使用哪种后端服务，当前支持`valine`、`leancloud`
-
-### locale
+## locale
 
 - 类型：`string`
 - 默认值：`"zh-CN"`
 
-显示语言，支持如下：
+显示语言
 
 - `en`：English
 - `zh-CN`：Chinese Simplified
 
-### gravatar
+## gravatar
 
 - 类型：`string`
 - 默认值：`"https://www.gravatar.com/avatar/"`
 
 Gravatar 头像地址
 
-### gravatarParameters
+## gravatarParameters
 
 - 类型：`string`
 - 默认值：`"?d=mp&s=60"`
 
 请求 Gravatar 头像时附加的参数
 
-### spa
+## pageSize
 
-- 类型：`boolean`
-- 默认值：`false`
+- 类型：`number`
+- 默认值：`10`
 
-重复调用 `new Modis` 会触发 Leancloud sdk 错误。此时需要先调用 `Modis.initAv` （不可重复调用），之后将该值设为 `true` 就可以重复调用 `new Modis` 。
+每页评论显示数量
 
-### pathnameGenerator
+## pathnameGenerator
 
 - 类型：`function`
 - 默认值：
@@ -57,34 +48,27 @@ Gravatar 头像地址
   }
   ```
 
-## valine 选项
-
-### appId
+## theme
 
 - 类型：`string`
-- 默认值：`""`
+- 默认值：`auto`
 
-Leancloud 的 appId
+主题颜色
 
-### appKey
+- `auto`
+- `light`
+- `dark`
 
-- 类型：`string`
-- 默认值：`""`
-
-Leancloud 的 appKey
-
-## leancloud 选项
-
-### appId
+## backend
 
 - 类型：`string`
-- 默认值：`""`
+- 默认值：`"leancloud"`
 
-Leancloud 的 appId
+后端服务，当前仅支持 `leancloud` 或 `valine`
 
-### appKey
+## backendConfig
 
-- 类型：`string`
-- 默认值：`""`
+- 类型：`object`
+- 默认值：`{}`
 
-Leancloud 的 appKey
+后端服务选项

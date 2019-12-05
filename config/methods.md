@@ -2,7 +2,7 @@
 
 ## initAV
 
-用来初始化 Leancloud sdk
+初始化 Leancloud sdk
 
 ```
 Modis.initAV({

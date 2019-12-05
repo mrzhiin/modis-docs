@@ -2,23 +2,23 @@ module.exports = {
   title: "Modis",
   base: "/",
   head: [
-    [
-      "script",
-      {
-        src:
-          "https://cdn.jsdelivr.net/npm/@mrzhiin/modis@latest/dist/modis.min.js"
-      }
-    ],
-    [
-      "script",
-      {},
-      `Modis.initAV({
-        appId: "vqUa4z3qMJp16I5wfYHXEt1x-MdYXbMMI",
-        appKey: "7vtNB5pARaTm5QEdhbQKCxOs"
-      });`
-    ]
+    // [
+    //   "script",
+    //   {
+    //     src:
+    //       "https://cdn.jsdelivr.net/npm/@mrzhiin/modis@latest/dist/modis.min.js"
+    //   }
+    // ],
+    // [
+    //   "script",
+    //   {},
+    //   `Modis.initAV({
+    //     appId: "vqUa4z3qMJp16I5wfYHXEt1x-MdYXbMMI",
+    //     appKey: "7vtNB5pARaTm5QEdhbQKCxOs"
+    //   });`
+    // ]
   ],
-  dest: "public",
+  dest: "dist",
   themeConfig: {
     displayAllHeaders: true,
     nav: [
@@ -27,7 +27,7 @@ module.exports = {
     ],
     sidebar: {
       "/guide/": ["", "use", "backend"],
-      "/config/": ["", "methods"]
+      "/config/": ["", "backend", "methods"]
     },
     repo: "https://github.com/mrzhiin/modis"
   }

@@ -1,13 +1,13 @@
 ---
 home: true
 heroText: Modis
-tagline: 依赖与 Leancloud 的评论系统
+tagline: Web 评论服务
 actionText: 开始使用
 actionLink: /guide/
 footer: MIT Licensed
 ---
 
-<div ref="modis"></div>
+<!-- <div ref="modis"></div>
 
 <script>
 export default {
@@ -21,4 +21,4 @@ export default {
     });
   }
 };
-</script>
+</script> -->

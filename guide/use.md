@@ -2,25 +2,26 @@
 
 ## 引用
 
-### NPM
+### npm/yarn
 
 ```
-npm i @mrzhiin/modis
+nnpm i @mrzhiin/modis
+
+yarn add @mrzhiin/modis
 ```
 
 ### 浏览器
+
+- 完整
 
 ```html
 <script src="path/modis.min.js"></script>
 ```
 
-或者分别引入资源
+- 精简
 
 ```html
 <script src="//cdn.jsdelivr.net/npm/leancloud-storage@3.11.0/dist/av-min.js"></script>
-```
-
-```html
 <script src="path/modis.slim.min.js"></script>
 ```
 
@@ -32,8 +33,11 @@ npm i @mrzhiin/modis
 <script>
   new Modis({
     el: "#modis",
-    appId: "",
-    appKey: ""
+    backend: "leancloud",
+    backendConfig: {
+      appId: "<leancloud appId>",
+      appKey: "<leancloud appKey>"
+    }
   });
 </script>
 ```
