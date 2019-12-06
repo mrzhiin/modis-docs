@@ -4,9 +4,11 @@
   "author": "mrzhiin <mrzhiin@gmail.com>",
   "scripts": {
     "dev": "vuepress dev .",
-    "build": "vuepress build ."
+    "build": "vuepress build .",
+    "deploy:netlify": "netlify deploy"
   },
   "devDependencies": {
+    "netlify-cli": "^2.23.0",
     "vuepress": "^1.2.0"
   }
 }

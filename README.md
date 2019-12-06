@@ -7,7 +7,7 @@ actionLink: /guide/
 footer: MIT Licensed
 ---
 
-<!-- <div ref="modis"></div>
+<div ref="modis"></div>
 
 <script>
 export default {
@@ -17,8 +17,10 @@ export default {
     new Modis({
       el: this.$refs.modis,
       backend: "leancloud",
-      spa: true
+      backendConfig:{
+        spa: true
+      }
     });
   }
 };
-</script> -->
+</script>
