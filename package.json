@@ -8,7 +8,7 @@
     "deploy:netlify": "netlify deploy"
   },
   "devDependencies": {
-    "netlify-cli": "^2.23.0",
+    "netlify-cli": "^2.27.0",
     "vuepress": "^1.2.0"
   }
 }

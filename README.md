@@ -17,6 +17,7 @@ export default {
     new Modis({
       el: this.$refs.modis,
       backend: "leancloud",
+      theme: "light",
       backendConfig:{
         spa: true
       }
