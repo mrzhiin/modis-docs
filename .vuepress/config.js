@@ -6,7 +6,7 @@ module.exports = {
       "script",
       {
         src:
-          "https://cdn.jsdelivr.net/npm/@mrzhiin/modis@latest/dist/modis.min.js"
+          "https://cdn.jsdelivr.net/npm/@mrzhiin/modis@latest/dist/modis.js"
       }
     ],
     [
